@@ -313,3 +313,211 @@ label,input,select,textarea,button{font-size:16px!important}
   .hero-copy h1{font-size:37px!important}
   .section{padding-top:54px!important;padding-bottom:54px!important}
 }
+
+
+/* =========================================================
+   RAI DENTAL — FINAL SMOOTH / HARMONIC UI PASS
+   ========================================================= */
+html{scroll-behavior:smooth}
+body{
+  font-family:"Poppins",sans-serif!important;
+  font-size:16px;
+  font-weight:400!important;
+  line-height:1.6;
+  letter-spacing:0;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* Natural hierarchy — readable without making the whole interface heavy. */
+h1,h2,h3,h4,h5,h6{
+  font-family:"Playfair Display",serif!important;
+  font-weight:500!important;
+  letter-spacing:-.018em;
+  line-height:1.08;
+}
+p,li{font-weight:400!important}
+a{font-weight:500}
+button,.btn{font-weight:500!important}
+
+/* Navigation */
+.desktop-nav a,.nav-phone,.nav-actions a{
+  font-size:13px!important;
+  font-weight:500!important;
+}
+.kicker,.eyebrow{
+  font-size:12px!important;
+  font-weight:500!important;
+  letter-spacing:.11em;
+}
+
+/* Hero — compact and balanced, especially on phones. */
+.hero{
+  padding:56px 0 68px!important;
+}
+.hero-grid{
+  align-items:center!important;
+  gap:48px!important;
+}
+.hero-copy h1{
+  font-weight:500!important;
+  line-height:1.04!important;
+  margin:8px 0 18px!important;
+}
+.hero-lede{
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.68!important;
+  margin:0 0 23px!important;
+  max-width:58ch;
+}
+.hero-actions{margin-bottom:24px!important}
+.hero-actions .btn{
+  font-size:14px!important;
+  font-weight:500!important;
+}
+.hero-trust strong{
+  font-size:20px!important;
+  font-weight:500!important;
+}
+.hero-trust span{
+  font-size:11px!important;
+  font-weight:400!important;
+  line-height:1.35!important;
+}
+.hero-card b{font-weight:500!important}
+.hero-card small{
+  font-size:11px!important;
+  font-weight:400!important;
+}
+.hero-badge{font-weight:500!important}
+
+/* Sections */
+.section{
+  padding-top:82px!important;
+  padding-bottom:82px!important;
+}
+.section-head{margin-bottom:36px!important}
+.section-head h2{font-weight:500!important}
+.section-head>p{
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.7!important;
+}
+
+/* Treatment cards: calm hierarchy, no shouting. */
+.service-body h3,.service-card .service-name{
+  font-family:"Playfair Display",serif!important;
+  font-size:20px!important;
+  font-weight:500!important;
+  line-height:1.16!important;
+}
+.service-body p,.service-card .service-description{
+  font-family:"Poppins",sans-serif!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.58!important;
+}
+.service-body a{
+  font-size:13px!important;
+  font-weight:500!important;
+}
+.service-tag,.service-number{
+  font-size:10px!important;
+  font-weight:500!important;
+}
+
+/* Doctor */
+.doctor h3{font-weight:500!important}
+.doctor-role{font-size:12px!important;font-weight:500!important}
+.doctor p{font-size:16px!important;font-weight:400!important;line-height:1.72!important}
+.doctor-link{font-size:13px!important;font-weight:500!important}
+
+/* Stats/reviews/FAQ */
+.stat strong{font-weight:500!important}
+.stat span{font-size:11px!important;font-weight:400!important}
+.review-meta{font-size:11px!important;font-weight:400!important}
+.faq-question{font-size:16px!important;font-weight:500!important}
+.faq-answer{font-size:16px!important;font-weight:400!important;line-height:1.7!important}
+
+/* Forms — especially important from the supplied screenshot. */
+.contact-form label{
+  font-size:13px!important;
+  font-weight:500!important;
+  letter-spacing:.08em!important;
+  line-height:1.35!important;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  font-family:"Poppins",sans-serif!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  font-family:"Poppins",sans-serif!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  opacity:.58!important;
+}
+.contact-form button,
+.contact-form .btn{
+  font-size:15px!important;
+  font-weight:500!important;
+}
+
+/* Contact/map/footer */
+.contact-details b{font-size:13px!important;font-weight:500!important}
+.contact-details p{font-size:16px!important;font-weight:400!important}
+.map-copy>p{font-size:16px!important;font-weight:400!important}
+.map-mini{font-size:13px!important;font-weight:400!important}
+.map-mini b{font-weight:500!important}
+.footer-links a{font-size:12px!important;font-weight:400!important}
+.footer-note,.form-note{font-size:11px!important;font-weight:400!important}
+
+/* Mobile: remove the excessive top/bottom air seen in the hero screenshot. */
+@media(max-width:950px){
+  .hero{padding:42px 0 58px!important}
+  .hero-grid{gap:30px!important}
+}
+@media(max-width:700px){
+  .hero{padding:26px 0 46px!important}
+  .hero-grid{gap:24px!important}
+  .hero-copy h1{
+    font-size:clamp(36px,10.8vw,47px)!important;
+    line-height:1.05!important;
+    margin:0 0 16px!important;
+  }
+  .hero-lede{
+    font-size:16px!important;
+    line-height:1.62!important;
+    margin-bottom:20px!important;
+  }
+  .hero-actions{gap:9px!important;margin-bottom:20px!important}
+  .hero-actions .btn{
+    min-height:46px!important;
+    font-size:14px!important;
+  }
+  .hero-trust{gap:8px!important}
+  .hero-trust strong{font-size:19px!important}
+  .hero-trust span{font-size:10px!important}
+  .hero-visual{margin-top:0!important}
+  .hero-card{padding:11px 13px!important}
+  .hero-card b{font-size:14px!important}
+  .hero-card small{font-size:10px!important}
+  .hero-badge{font-size:9px!important}
+
+  .section{
+    padding-top:60px!important;
+    padding-bottom:60px!important;
+  }
+  .section-head{margin-bottom:28px!important}
+}
+@media(max-width:380px){
+  .hero{padding:22px 0 40px!important}
+  .hero-copy h1{font-size:35px!important}
+  .hero-lede{font-size:16px!important}
+}
